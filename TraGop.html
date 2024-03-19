@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện Thoại Quang Minh</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: lightslategray;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        div {
+            float: top;
+        }
+        
+        div ul li a {
+            color: pink;
+            font-size: 25px;
+        }
+        
+        div .LG:hover {
+            padding: 0px;
+            background-color: lightslategray;
+        }
+        
+        div li:hover {
+            background-color: rgb(0, 140, 255);
+            padding: 20px;
+        }
+        
+        @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700,800,900');
+        .container {
+            position: relative;
+            width: 60%;
+            max-width: 1100px;
+            margin: 20px;
+            height: 500%;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .container .Form {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container .Form form {
+            position: relative;
+            width: 100%;
+            padding: 0 0 0 75px;
+        }
+        
+        .container .Form h2 {
+            color: red;
+            font-weight: 500;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+        
+        .container .Form form .inputform {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .container .Form form .inputform:last-child {
+            margin-bottom: 0px;
+        }
+        
+        .container .Form form .inputform input,
+        .container .Form form .inputform textarea {
+            position: relative;
+            background: transparent;
+            outline: none;
+            border: none;
+            width: 100%;
+            color: rgb(133, 11, 11);
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-weight: 300;
+            border-bottom: 2px solid black;
+            resize: none;
+        }
+        
+        .container .Form form .inputform textarea {
+            height: 100px;
+        }
+        
+        .container .Form form .inputform [type="submit"] {
+            background-color: #fff;
+            padding: 8px 20px;
+            margin-top: -10px;
+            width: 100px;
+            cursor: pointer;
+            background-color: #ff5064;
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        
+        .container .Form form .inputform [type="submit"]:focus {
+            background-color: #1bfaad;
+            color: #111;
+        }
+        
+        .container .Form form .inputform span {
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+            font-weight: 300;
+            display: inline-block;
+            pointer-events: none;
+            letter-spacing: 1px;
+            color: black;
+            transition: all 0.2s;
+        }
+        
+        .container .Form form .inputform input:focus~span,
+        .container .Form form .inputform textarea:focus~span,
+        .container .Form form .inputform input:valid~span,
+        .container .Form form .inputform textarea:valid~span {
+            transform: translateY(-24px);
+            color: black;
+            font-size: 14px;
+        }
+        
+        .container .Form form .inputform input:focus,
+        .container .Form form .inputform textarea:focus,
+        .container .Form form .inputform input:valid,
+        .container .Form form .inputform textarea:valid {
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="LG">
+                <a href="index.html"><img src="logo.jpg" width="120px" height="80px"></a>
+
+            </li>
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><a href="./SanPham.html">Sản Phẩm</a></li>
+            <li><a href="./TraGop.html">Trả Góp</a></li>
+            <li><a href="./KhuyenMai.html">Khuyến Mãi</a></li>
+            <li><a href="./DangKy.html">Đăng Ký</a></li>
+            <li><a href="./DangNhap.html">Đăng Nhập</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <div class="Form">
+            <form>
+                <h2>Nhập thông tin để được hỗ trợ trả góp </h2>
+                <div class="inputform">
+                    <input type="text" name="" required="required" />
+                    <span>Họ và Tên</span>
+                </div>
+                <div class="inputform">
+                    <input type="number" name="" required="required" />
+                    <span>Số điện thoại của bạn</span>
+                </div>
+                <div class="inputform">
+                    <input type="email" name="" required="required" />
+                    <span>Địa chỉ Email của bạn</span>
+                </div>
+                <div class="inputform">
+                    <textarea required="required"></textarea>
+                    <span>Nhu cầu của bạn về sản phẩm...</span>
+                </div>
+                <div class="inputform">
+                    <input type="submit" name="" value="Gửi" />
+                </div>
+            </form>
+        </div>
+        <div class="imgBox">
+            <img src="Anhlienhe.jpg" width="400px" height="550px" />
+        </div>
+    </div>
+    <footer style="float:botton">
+        <p>Điện Thoại Quang Minh
+            <br> &#9743; 0878909396 <a href="https://web.facebook.com/minhdo2410">FACEBOOK</a>
+            <br>Uy Tín luôn đặt lên đầu
+        </p>
+
+    </footer>
+</body>
+
+</html>
